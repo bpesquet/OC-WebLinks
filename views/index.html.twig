@@ -1,0 +1,19 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% if links %}
+        <div class="list-group">
+            {% for link in links %}
+                <a href="{{ link.url }}" class="list-group-item">{{ link.title }}
+                <span class="small">Submitted by ?</span>
+                </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-warning">
+            No links found.
+        </div>
+    {% endif %}
+{% endblock %}

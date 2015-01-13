@@ -1,0 +1,10 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "doctrine/dbal": "~2.4",
+        "twig/twig": "~1.16"
+    },
+    "autoload": {
+        "psr-4": {"WebLinks\\": "src"}
+    }
+}
